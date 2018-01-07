@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/qp_main_parent" android:background="@drawable/bg_default" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/widget99" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:id="@id/ad_holder" style="@style/AdHolder" />
+        <RelativeLayout android:background="@drawable/actionbar_bg" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="48.0dip"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <ImageButton android:id="@id/actionbar_logo_btn" android:layout_width="180.0dip" android:layout_height="40.0dip" style="@style/ActionBarLogo" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true"
+              xmlns:android="http://schemas.android.com/apk/res/android">                
+                <ImageButton android:id="@id/actionbar_share_btn" android:layout_width="40.0dip" android:layout_height="40.0dip" style="@style/ActionBarShare" />
+            </LinearLayout>
+        </RelativeLayout>
+    <RelativeLayout android:background="#ff021c30" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+    				xmlns:android="http://schemas.android.com/apk/res/android"
+    				xmlns:ads="http://schemas.android.com/apk/res-auto">
+    			<com.google.android.gms.ads.AdView android:id="@+id/adView"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         ads:adUnitId="ca-app-pub-4644082534578545/1921175714"
+                         ads:adSize="BANNER"/>
+    </RelativeLayout>
+    <ImageView android:background="@drawable/dashboard_bar_shadow" android:layout_width="fill_parent" android:layout_height="6.0dip" />
+    </LinearLayout>
+    <ScrollView android:id="@id/qp_body_wrapper" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_above="@id/widget34" android:layout_below="@id/widget99">
+        <LinearLayout android:orientation="vertical" android:id="@id/qp_body_wrapper_container" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <TextView android:textSize="18.0dip" android:gravity="left" android:id="@id/qp_body" android:padding="10.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/QuoteViewText" />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/widget34" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <Button android:id="@id/qp_previous_btn" android:background="@drawable/state_left_arrow" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_margin="12.0dip" />
+        <Button android:id="@id/qp_random_btn" android:background="@drawable/state_refresh_btn" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_margin="12.0dip" />
+        <Button android:id="@id/qp_favourite" android:background="@drawable/qp_fav_btn_normal" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_margin="12.0dip" />
+        <Button android:id="@id/qp_next_btn" android:background="@drawable/state_right_arrow" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_margin="12.0dip" />
+    </LinearLayout>      	
+</RelativeLayout>

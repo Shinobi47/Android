@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg_default" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/ad_holder" style="@style/AdHolder" />
+    <RelativeLayout android:orientation="vertical" android:background="@drawable/actionbar_bg" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="36.0dip"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <ImageButton android:id="@id/actionbar_logo_btn" android:layout_width="135.0dip" android:layout_height="30.0dip" style="@style/ActionBarLogo" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <ImageButton android:id="@id/fqi_expand_quotes_btn" android:scaleType="fitXY" android:adjustViewBounds="true" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/actionbar_ic_resize" style="@style/ActionBarResize" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:background="#ff021c30" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+    				xmlns:android="http://schemas.android.com/apk/res/android"
+    				xmlns:ads="http://schemas.android.com/apk/res-auto">
+    			<com.google.android.gms.ads.AdView android:id="@+id/adView"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         ads:adUnitId="ca-app-pub-4644082534578545/1921175714"
+                         ads:adSize="BANNER"/>
+    </RelativeLayout>     
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/widget34" android:background="@drawable/mid_gradient_bg" android:layout_width="fill_parent" android:layout_height="30.0dip"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <Spinner android:id="@id/fqi_page_no" android:background="@drawable/state_spinner_btn" android:padding="1.5dip" android:layout_width="108.0dip" android:layout_height="27.0dip" android:layout_marginLeft="7.0dip" android:layout_marginRight="15.0dip" android:prompt="@string/fqi_page_no" />
+        <Spinner android:id="@id/fqi_sorting" android:background="@drawable/state_spinner_btn" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="22.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="7.0dip" android:prompt="@string/fqi_sorting" android:layout_weight="1.0" />
+    </LinearLayout>
+    <TextView android:textSize="12.0dip" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@id/fqi_header_name" android:background="@drawable/middle_bar_bg" android:paddingTop="1.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="19.0dip" android:shadowColor="#ff111111" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="1.0" />     
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <ListView android:id="@id/fqi_ListView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="#ff771e1b" android:dividerHeight="1.0dip" />
+        <TextView android:id="@id/empty" android:text="هذه القائمة فارغة" style="@style/EmptyListText" />
+        </RelativeLayout>
+</LinearLayout>

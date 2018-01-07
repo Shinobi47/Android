@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Animations" />
+    <style name="Animations.GrowFromBottom" parent="@style/Animations">
+        <item name="android:windowEnterAnimation">@anim/grow_from_bottom</item>
+        <item name="android:windowExitAnimation">@anim/shrink_from_top</item>
+    </style>
+    <style name="Animations.GrowFromTop" parent="@style/Animations">
+        <item name="android:windowEnterAnimation">@anim/grow_from_top</item>
+        <item name="android:windowExitAnimation">@anim/shrink_from_bottom</item>
+    </style>
+    <style name="Animations.PopDownMenu" parent="@style/Animations">
+        <item name="android:windowEnterAnimation">@anim/grow_from_topleft_to_bottomright</item>
+        <item name="android:windowExitAnimation">@anim/shrink_from_bottomright_to_topleft</item>
+    </style>
+    <style name="page_background_br">
+        <item name="android:background">@drawable/bg_default</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+    <style name="page_background_dk">
+        <item name="android:background">@drawable/bg_default</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+    <style name="DialogWindowTitle">
+        <item name="android:maxLines">1</item>
+        <item name="android:scrollHorizontally">true</item>
+    </style>
+    <style name="popupStyle">
+        <item name="android:windowBackground">@color/semi_transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTitleStyle">@style/DialogWindowTitle</item>
+        <item name="android:windowAnimationStyle">@style/MyAnimation.Window</item>
+        <item name="android:windowSoftInputMode">adjustPan</item>
+    </style>
+    <style name="MyAnimation" />
+    <style name="MyAnimation.Window" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/appear</item>
+        <item name="android:windowExitAnimation">@anim/disappear</item>
+    </style>
+    <style name="AdHolder">
+        <item name="android:background">@drawable/loading_ad</item>
+        <item name="android:visibility">gone</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">50.0dip</item>
+    </style>
+    <style name="ActionBarLogo">
+        <item name="android:background">@drawable/state_actionbar_logo_btn</item>
+        <item name="android:layout_marginLeft">5.0dip</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <style name="ActionBarFB">
+        <item name="android:background">@drawable/state_actionbar_fb_btn</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>    
+    <style name="ActionBarSearch">
+        <item name="android:background">@drawable/state_actionbar_search_btn</item>
+        <item name="android:layout_marginLeft">7.0dip</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <style name="ActionBarShare">
+        <item name="android:background">@drawable/state_actionbar_share_btn</item>
+        <item name="android:layout_marginLeft">7.0dip</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <style name="ActionBarResize">
+        <item name="android:background">@drawable/state_actionbar_btn</item>
+        <item name="android:layout_marginLeft">7.0dip</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style> 
+    <style name="ActionBarFavRem">
+        <item name="android:background">@drawable/state_actionbar_favrem_btn</item>
+        <item name="android:layout_marginLeft">7.0dip</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>                   
+    <style name="HelpIndexItem">
+        <item name="android:textColor">#fffcfcfc</item>
+        <item name="android:padding">5.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="EmptyListItem">
+        <item name="android:textColor">#ff593a17</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:padding">5.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">list is empty</item>
+    </style>
+    <style name="DashboardItemFont" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#fffcfcfc</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">-5.0dip</item>
+        <item name="android:text">Authors</item>
+        <item name="android:shadowColor">#ff000000</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">2.0</item>
+    </style>
+    <style name="DashboardItemImage">
+        <item name="android:background">@drawable/state_dashboard_btn</item>
+        <item name="android:paddingBottom">2.0dip</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+    <style name="QuoteViewText">
+        <item name="android:textSize">18.0dip</item>
+        <item name="android:typeface">serif</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:textColor">#fffcfcfc</item>
+        <item name="android:shadowColor">#ff102e46</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">2.0</item>
+    </style>
+    <style name="ActionBarItem">
+        <item name="android:background">@drawable/state_actionbar_btn</item>
+        <item name="android:padding">5.0dip</item>
+        <item name="android:layout_width">45.0dip</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+    <style name="AuthorListItem" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">22.0dip</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textColor">#fffff0dd</item>
+        <item name="android:paddingLeft">10.0dip</item>
+        <item name="android:paddingRight">5.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:shadowColor">#ff333333</item>
+        <item name="android:shadowDx">1.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">2.0</item>
+    </style>
+    <style name="TabButtonActive">
+        <item name="android:textSize">16.0dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#fffff3e4</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/tab_active</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">30.0dip</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="TabButtonInactive">
+        <item name="android:textSize">16.0dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff593a17</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/tab_inactive</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">30.0dip</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="EmptyListText">
+        <item name="android:textSize">14.0dip</item>
+        <item name="android:textColor">@color/grey</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">10.0dip</item>
+    </style>
+    <style name="WidgetButtonWrapper">
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@drawable/middle_bar_bg</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">50.0dip</item>
+    </style>
+    <style name="WidgetButton">
+        <item name="android:textColor">#ff593a17</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/state_generic_btn</item>
+        <item name="android:padding">5.0dip</item>
+        <item name="android:layout_width">80.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">5.0dip</item>
+        <item name="android:layout_marginRight">5.0dip</item>
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+    <style name="WidgetIndexHeader">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#fffcfcfc</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@drawable/mid_gradient_bg</item>
+        <item name="android:paddingLeft">5.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:shadowColor">#ff102e46</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">2.0</item>
+    </style>
+    <style name="WidgetIndexItemWrapper">
+        <item name="android:orientation">vertical</item>
+        <item name="android:padding">5.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="WidgetIndexItemTitle">
+        <item name="android:textSize">18.0dip</item>
+        <item name="android:textColor">#fffff0dd</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="WidgetIndexItemSummary">
+        <item name="android:textSize">12.0dip</item>
+        <item name="android:textColor">#fffff0dd</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="WidgetIndexItemTick">
+        <item name="android:textColor">@color/transparent</item>
+        <item name="android:focusable">false</item>
+        <item name="android:layout_width">30.0dip</item>
+        <item name="android:layout_height">30.0dip</item>
+        <item name="android:layout_marginRight">10.0dip</item>
+        <item name="android:button">@drawable/state_generic_cbx</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <style name="WidgetIndexItemSeparator">
+        <item name="android:background">#ff4a3216</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1.0dip</item>
+    </style>
+    <style name="WidgetMainWrapper">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingLeft">3.0dip</item>
+        <item name="android:paddingTop">2.0dip</item>
+        <item name="android:paddingRight">3.0dip</item>
+        <item name="android:paddingBottom">2.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+    <style name="WidgetAuthorImage">
+        <item name="android:id">@id/w_image</item>
+        <item name="android:background">@drawable/widget_img_bg</item>
+        <item name="android:padding">3.0dip</item>
+        <item name="android:visibility">visible</item>
+        <item name="android:layout_width">60.0dip</item>
+        <item name="android:layout_height">80.0dip</item>
+        <item name="android:layout_marginLeft">5.0dip</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+    <style name="WidgetLargeAuthorImage">
+        <item name="android:id">@id/w_image</item>
+        <item name="android:background">@drawable/widget_img_bg</item>
+        <item name="android:padding">3.0dip</item>
+        <item name="android:visibility">visible</item>
+        <item name="android:layout_width">70.0dip</item>
+        <item name="android:layout_height">88.0dip</item>
+        <item name="android:layout_marginLeft">5.0dip</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+    <style name="WidgetWrapper">
+        <item name="android:orientation">vertical</item>
+        <item name="android:padding">0.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+    <style name="LargeWidgetWrapper">
+        <item name="android:orientation">vertical</item>
+        <item name="android:padding">0.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">150.0dip</item>
+    </style>
+    <style name="LargeLongWidgetButton">
+        <item name="android:background">#ff333333</item>
+        <item name="android:layout_width">46.0dip</item>
+        <item name="android:layout_height">35.0dip</item>
+        <item name="android:layout_marginLeft">10.0dip</item>
+        <item name="android:layout_marginRight">10.0dip</item>
+    </style>
+    <style name="LargeWidgetButton">
+        <item name="android:background">#ff333333</item>
+        <item name="android:layout_width">35.0dip</item>
+        <item name="android:layout_height">35.0dip</item>
+        <item name="android:layout_marginLeft">10.0dip</item>
+        <item name="android:layout_marginRight">10.0dip</item>
+    </style>
+    <style name="WidgetBg">
+        <item name="android:id">@id/w_background</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+    <style name="WidgetBodyWrapper">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingLeft">12.0dip</item>
+        <item name="android:paddingTop">1.0dip</item>
+        <item name="android:paddingRight">12.0dip</item>
+        <item name="android:paddingBottom">0.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <style name="WidgetQuote">
+        <item name="android:textSize">11.0dip</item>
+        <item name="android:typeface">serif</item>
+        <item name="android:id">@id/w_quote</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:text">If a man is proud of his wealth, he should not be praised until it is known how he employs it.</item>
+        <item name="android:maxLines">5</item>
+    </style>
+    <style name="WidgetAuthor">
+        <item name="android:textSize">10.0dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">right</item>
+        <item name="android:id">@id/w_author</item>
+        <item name="android:paddingRight">5.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">Socrates</item>
+        <item name="android:lines">1</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
+    <style name="WidgetLargeQuote">
+        <item name="android:textSize">13.0dip</item>
+        <item name="android:typeface">serif</item>
+        <item name="android:id">@id/w_quote</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:text">If a man is proud of his wealth, he should not be praised until it is known how he employs it.</item>
+        <item name="android:maxLines">7</item>
+    </style>
+    <style name="WidgetLargeAuthor">
+        <item name="android:textSize">12.0dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">right</item>
+        <item name="android:id">@id/w_author</item>
+        <item name="android:paddingRight">5.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">Socrates</item>
+        <item name="android:lines">1</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
+    <style name="Theme" parent="@android:style/Theme" />
+    <style name="Theme.CustomBrown" parent="@style/Theme">
+        <item name="pageBackground">@style/page_background_br</item>
+    </style>
+    <style name="Theme.CustomDark" parent="@style/Theme">
+        <item name="pageBackground">@style/page_background_dk</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+</resources>

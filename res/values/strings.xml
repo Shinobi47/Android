@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">نكت مغربية تحت الحزام +18 </string>
+    <string name="app_version">1.0</string>
+    <string name="app_version_name">Version 1.0</string>
+    <string name="widget_name">نكت مغربية تحت الحزام +18  FREE Small (4x1)</string>
+    <string name="large_widget_name">نكت مغربية تحت الحزام +18  FREE Large (4x2)</string>
+    <string name="fqi_sorting">نكت :</string>
+    <string name="fqi_page_no">نكت :</string>
+    <string name="f_select">اختيار :</string>
+    <string name="ai_sort">ترتيب :</string>
+    <string name="d_adchoice_header">المرجو اختيار حجم الإعلان</string>
+    <string name="d_adchoice_notification">"إخفاء كل الإعلانات في التطبيق. حدد هذا الخيار إذا كنت لا تريد أن ترى أي إعلانات داخل التطبيق. ومع ذلك، سيتم عرض إعلان واحد في شريط الإعلام الخاص بك مرة واحدة كل بضعة أيام. لن تبطئ جهازك ولن تستنزف البطارية كما يقول بعض الناس"</string>
+    <string name="d_adchoice_notification2">اظهر دعمك لهذا التطبيق عن طريق تحديد هذا الخيار.</string>
+    <string name="d_adchoice_inapp">"حدد هذا الخيار إذا كنت لا ترغب في تلقي الإعلانات في شريط الإعلام الخاص. بدلا من ذلك، سوف يتم عرض الإعلانات داخل التطبيق."</string>
+    <string name="d_adchoice_notice">تذكر! يمكنك دائما تغيير هذا الخيار في إعدادات التطبيق.</string>
+    <string name="db_help">"هذا الخيار سوف يحمل النكت المفضلة من النسخة الاحتياطية وإزالة المفضلة الحالية 
+
+هذا الخيار سوف يضيف النكت المفضلة من النسخة الاحتياطية إلى المفضلة الحالية
+
+هذا الخيار سوف يمسح الملفات الإحتياطية من الذاكرة الخارجية"</string>
+    <string name="faq_1">I cannot find the jokes widget</string>
+    <string name="faq_1_text">"Please make sure that the app is installed on your device's internal memory. If it is on the external storage you need to move it to phone's Settings/Applications/Manage Applications/... and click on 'Move to phone'."</string>
+    <string name="faq_2">How can I share jokes?</string>
+    <string name="faq_2_text">"In Jokes app you can share your favourite jokes in Facebook, SMS and more. From Joke page, press the share button on top and select Facebook. You will see a login window where you can enter your login credentionals and share the joke."</string>
+    <string name="faq_3">How to add jokes to favourites?</string>
+    <string name="faq_3_text">"To add a joke to favourites list, just press bright yellow 'Star' icon next to the joke. Press it again to remove it from favorties."</string>
+    <string name="faq_4">How to add desktop widget?</string>
+    <string name="faq_4_text">"Close the application, then click on empty space on your desktop. From the popup menu choose 'Add widget'. From the widget list choose 'Jokes' the widget you wish to add to your desktop."</string>
+    <string name="confirm_remove_fav">هل أنت متأكد أنك تريد مسح كل النكت المفضلة لديك؟</string>
+    <string name="confirm_email_fav">هل أنت متأكد أنك تريد ارسال نكتك المفضلة إلى البريد الإلكتروني ؟ </string>
+    <string name="email_fav_footer">تم الإرسال من تطبيق النكت</string>
+    <string name="email_fav_subject">نكتي المفضلة</string>
+    <string name="facebook_app_id"></string>
+    <string name="facebook_share"></string>
+    <string name="facebook_fanpage">http://www.facebook.com/</string>
+    <string name="confirm_remove_pre">هل أنت متأكد أنك تريد إعادة تعيين تفضيلاتك؟</string>
+</resources>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/scrollView1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:background="#ff373737" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textStyle="bold" android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="معاينة نكتة" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:id="@id/st_ll_backgroundImage" android:paddingTop="20.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="28.0dip">
+                    <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="#ffffffff" android:id="@id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="الصورة الخلفية" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:background="#ff575757" android:layout_width="fill_parent" android:layout_height="4.0dip" />
+                <LinearLayout android:orientation="vertical" android:id="@id/st_ll_quoteColor" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="#ffffffff" android:id="@id/textView3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="28.0dip" android:text="لون الخط" />
+                    <TextView android:id="@id/textView5" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="28.0dip" android:text="تغيير لون خط النكتة" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:background="#ff575757" android:layout_width="fill_parent" android:layout_height="4.0dip" />
+                <LinearLayout android:orientation="vertical" android:id="@id/st_ll_fontSize" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="#ffffffff" android:id="@id/textView7" android:paddingTop="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="28.0dip" android:text="حجم الخط" />
+                    <TextView android:id="@id/tv_viewFontSize" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="28.0dip" android:text="عادي" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:background="#ff575757" android:layout_width="fill_parent" android:layout_height="4.0dip" />
+                <LinearLayout android:orientation="vertical" android:id="@id/st_ll_reset" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="#ffffffff" android:id="@id/textView9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="28.0dip" android:layout_marginTop="8.0dip" android:text="إعادة ضبط" />
+                    <TextView android:id="@id/textView10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="28.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="8.0dip" android:text="انقر هنا إذا كنت تريد إعادة ضبط تفضيلاتك" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="#ff373737" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textStyle="bold" android:id="@id/textView11" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="الأداة الاجتماعية" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/st_ll_facebook" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="28.0dip" android:layout_marginTop="20.0dip" android:layout_marginBottom="8.0dip">
+                <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="#ffffffff" android:id="@id/textView12" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Facebook" />
+                <TextView android:id="@id/textView13" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="اضغط هنا لتسجيل الدخول" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="#ff373737" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textStyle="bold" android:id="@id/textView14" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="نكتة اليوم" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="28.0dip" android:layout_marginTop="20.0dip" android:layout_marginBottom="8.0dip" android:weightSum="1.0">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="#ffffffff" android:id="@id/textView15" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="مشاهدة JoD في التبليغات" />
+                    <TextView android:id="@id/textView16" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="أبلغني عندما تتغير نكتة اليوم" />
+                </LinearLayout>
+                <CheckBox android:gravity="right|center" android:id="@id/st_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:text=" " />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="#ff373737" android:padding="8.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textStyle="bold" android:id="@id/textView22" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="احتياطي البيانات" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/st_tv_backup" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/st_tv_backup1" android:paddingTop="20.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="28.0dip" android:text="احتياطي النكت المفضلة" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="#ff373737" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textStyle="bold" android:id="@id/textView24" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="آخر" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/st_tv_about" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="#ffffffff" android:id="@id/st_tv_about1" android:paddingTop="20.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="28.0dip" android:layout_marginBottom="20.0dip" android:text="About" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

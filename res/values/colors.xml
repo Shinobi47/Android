@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="vanilla">#fffff7ee</color>
+    <color name="dark_brown">#ff593a17</color>
+    <color name="transparent">#00000000</color>
+    <color name="semi_transparent">#bb000000</color>
+    <color name="brown">#ff966830</color>
+    <color name="grey">#ff7a7a7a</color>
+    <color name="white">#ffffffff</color>
+</resources>

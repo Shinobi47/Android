@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/splash_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+      <RelativeLayout android:background="#ff021c30" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+    				xmlns:android="http://schemas.android.com/apk/res/android"
+    				xmlns:ads="http://schemas.android.com/apk/res-auto">
+    			<com.google.android.gms.ads.AdView android:id="@+id/adView"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         ads:adUnitId="ca-app-pub-4644082534578545/1921175714"
+                         ads:adSize="BANNER"/>
+    </RelativeLayout>
+    <TextView android:textSize="12.0dip" android:textColor="#fffef3e6" android:gravity="right" android:id="@id/ss_version" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip" android:text="@string/app_version_name" android:layout_alignParentBottom="true" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="25.0dip" android:layout_above="@id/ss_version"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <TextView android:textSize="18.0dip" android:textStyle="bold" android:textColor="#ffdea25b" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Loading..." android:shadowColor="#ff111111" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="1.0" />
+    </LinearLayout>
+</RelativeLayout>

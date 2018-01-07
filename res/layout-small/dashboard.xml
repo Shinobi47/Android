@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg_default" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:background="@drawable/actionbar_bg" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="36.0dip"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <ImageButton android:id="@id/actionbar_logo_btn" android:layout_width="135.0dip" android:layout_height="30.0dip" style="@style/ActionBarLogo" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true"
+          xmlns:android="http://schemas.android.com/apk/res/android">            
+            <ImageButton android:id="@id/actionbar_facebook_btn" android:layout_width="30.0dip" android:layout_height="30.0dip" style="@style/ActionBarFB" />
+            <ImageButton android:id="@id/actionbar_search_btn" android:layout_width="30.0dip" android:layout_height="30.0dip" style="@style/ActionBarSearch" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:background="#ff021c30" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+    				xmlns:android="http://schemas.android.com/apk/res/android"
+    				xmlns:ads="http://schemas.android.com/apk/res-auto">
+    				<com.google.android.gms.ads.AdView android:id="@+id/adView"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         ads:adUnitId="ca-app-pub-4644082534578545/1921175714"
+                         ads:adSize="BANNER"/>
+    </RelativeLayout>     
+    <ImageView android:background="@drawable/dashboard_bar_shadow" android:layout_width="fill_parent" android:layout_height="4.5dip" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+                <ImageButton android:id="@id/d_quotes_btn" android:layout_width="75.0dip" android:layout_height="75.0dip" android:src="@drawable/dashboard_ic_quotes" style="@style/DashboardItemImage" />
+                <TextView android:textSize="12.0dip" android:text="النكت" style="@style/DashboardItemFont" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="3.0dip" android:layout_weight="1.0"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+                <ImageButton android:id="@id/d_favs_btn" android:layout_width="75.0dip" android:layout_height="75.0dip" android:src="@drawable/dashboard_ic_favs" style="@style/DashboardItemImage" />
+                <TextView android:textSize="12.0dip" android:text="النكت المفضلة" style="@style/DashboardItemFont" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+                <ImageButton android:id="@id/d_authors_btn" android:layout_width="75.0dip" android:layout_height="75.0dip" android:src="@drawable/dashboard_ic_authors" style="@style/DashboardItemImage" />
+                <TextView android:textSize="12.0dip" android:text="إعدادات" style="@style/DashboardItemFont" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:background="@drawable/dashboard_qod_bg" android:paddingLeft="6.0dip" android:paddingRight="6.0dip" android:paddingBottom="3.0dip" android:layout_width="fill_parent" android:layout_height="90.0dip" android:layout_margin="3.0dip"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <TextView android:textSize="9.0dip" android:textColor="#ffffffff" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="نكتة اليوم" />
+        <ScrollView android:gravity="center_vertical" android:id="@id/d_qod_scroller" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+                <TextView android:textSize="10.0dip" android:gravity="center_horizontal" android:id="@id/d_qod_body" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/QuoteViewText" />
+                <TextView android:textSize="9.0dip" android:textColor="#ffd48b35" android:gravity="right" android:id="@id/d_qod_author" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="7.0dip" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>
